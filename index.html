@@ -12,32 +12,29 @@
   </head>
   <body>
 
-    <nav class="navbar fixed-top" id="navbar">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" id="logo" href="#">&lt;Pedro Mariano/&gt;
-            </a>
-          </div>
-          <div>
-
-            <div class="d-flex flex-row-reverse">
-                <div class="p-3 m-2">
-                  <a class="nav-link" aria-current="page" href="#">Contato</a>
-                </div>
-                <div class="p-3 m-2">
-                  <a class="nav-link navbar-links" aria-current="page" href="#">Habilidades</a>
-                </div>
-                <div class="p-3 m-2">
-                  <a class="nav-link" aria-current="page" href="#">Projetos</a>
-                </div>
-                <div class="p-3 m-2">
-                  <a class="nav-link" aria-current="page" href="#section01">Sobre mim</a>
-                </div>
-
-            </div>
-        </nav>
+    <nav class="navbar navbar-expand-lg fixed-top d-flex" id="navbar">
+      <div class="container-fluid" id="navegacao">
+        <a class="navbar-brand" href="#">&lt;Pedro Mariano/&gt;</a>
+      <button class="navbar-toggler" id="button-nav" onclick="buttonNav()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="p-3 m-2 navbar-nav">
+          <a class="nav-link" aria-current="page" href="#section01">Sobre mim</a>
+        </div>
+        <div class="p-3 m-2 navbar-nav">
+          <a class="nav-link" aria-current="page" href="#">Projetos</a>
+        </div>
+        <div class="p-3 m-2 navbar-nav">
+          <a class="nav-link navbar-links" aria-current="page" href="#">Habilidades</a>
+        </div>
+        <div class="p-3 m-2 navbar-nav">
+          <a class="nav-link" aria-current="page" href="#">Contato</a>
+        </div>
+      </div>
+    </nav>
         
-        <!-- Section 1 -->
         <div class="d-flex flex-align-content-center" id="wrapper">
 
           <div class="container-fluid" id="main-title">
@@ -56,6 +53,8 @@
 
           
         </div>
+
+        <div id="separador"></div>
 
         <div class="d-flex flex-align-content-center" id="section01">
 

@@ -5,9 +5,13 @@
   
 }
 
-.navbar{
-    background-color: #fff;
-    color: black;
+#navbar{
+    height: 100px;
+   
+}
+
+#navbarTogglerDemo02, a{
+    justify-content: flex-end;
 }
 
 
@@ -67,15 +71,17 @@ padding-left: 3rem;
     top: 0;
     width: 100%;
     position: fixed;
-    transition: background-color .2s ease-in-out;
+    transition: background-color .1s ease-in-out;
   } 
 
 div > .nav-link{
     font-size: 18pt;
+    color: #000;
 }
 
 div >.nav-link:hover {
     text-decoration: underline;
+    color: black;
 }
 
 #line{
@@ -91,4 +97,30 @@ div > #logo{
 
 div > #logo:hover{
     text-decoration: underline;
+}
+
+#separador{
+    margin: 80px auto;
+    width: 30vw;
+    height: 0;
+    border: 1px solid #00000555;
+}
+
+@media (max-width: 991px) {
+
+    #wrapper > div > img{
+        display: none;
+    }
+
+    #wrapper{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        padding: 80px 10px 0 30px ;
+    }
+
+    #section01 > div > img{
+        display: none;
+    }
+    
 }
