@@ -13,6 +13,9 @@ const buttonNav = function() {
   if (toggleButton = true) {
     const toggleButton = document.getElementById('button-nav').click();
     document.getElementById('navbarTogglerDemo02').style.backgroundColor="#fff";
+  }else{
+    const toggleButton = document.getElementById('button-nav').click();
+    document.getElementById('navbarTogglerDemo02').style.backgroundColor="#8f5be4";
   }
 }
   
