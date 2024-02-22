@@ -141,6 +141,11 @@ div > #logo:hover{
         align-items: center;
     }
 
+   #social-button{
+    width: 80px;
+    margin-left: 5px;
+   }
+
     #main-title{
         display: flex;
         justify-content: center;
