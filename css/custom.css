@@ -125,6 +125,7 @@ div > #logo:hover{
     #wrapper{
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-top: 100px;
         padding: 80px 10px 0 30px ;
     }
@@ -133,4 +134,17 @@ div > #logo:hover{
         display: none;
     }
     
+    .button-section{
+        width: 480px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
