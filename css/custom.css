@@ -1,12 +1,14 @@
 #wrapper{
-    padding: 8.9em;
+    padding: 7.9em;
     justify-content:space-around;
     align-items: center; 
-  
+    width: 100%;
 }
+      
+
 
 #navbar{
-    height: 100px;
+    height: 60px;
    
 }
 
@@ -24,33 +26,6 @@ padding-left: 3rem;
     margin: 0;
 }
 
-#social-button{
-    width: 100px;
-    padding: 12px;
-    background-color: #fff;
-    color: black;
-    border:1px solid black;
-    
-}
-
-#social-button:hover{
-    background-color: black;
-    color: #fff;
-    transition: all .2s ease-in-out;
-
-}
-
-#curriculo-button{
-    width: 150px;
-    padding: 12px;
-    background-color: blueviolet;
-    border: none;
-}
-
-#curriculo-button:hover{
-    background-color: #8f5be4;
-}
-
 #section01{
     font-size: 18pt;
     width: 100%;
@@ -59,6 +34,26 @@ padding-left: 3rem;
     padding-top: 3.9em;
 
 }
+
+#curriculo-button{
+    background-color: #8f5be4b0;
+}
+
+
+#curriculo-button:hover{
+    background-color: #8f5be4;
+
+}
+
+#github-button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+#linkedin-button:hover{
+    background-color: #007dbb;
+}
+
 
 .changeStyle {
     background-color: #8f5be4;
@@ -114,6 +109,118 @@ div > #logo:hover{
     height: 365px;
     object-fit: cover;
 }
+
+.button-section > h1{
+    font-size: 2.5rem;
+    
+    
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+.card {
+    
+    max-width: 50vw;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+ 
+    text-align: center;
+
+    margin-top: 10px;
+  }
+  
+  .card a {
+    text-decoration: none
+  }
+  
+  .content {
+    padding: 1rem;
+  }
+  
+  .image {
+    object-fit: cover;
+    width: 100%;
+    height: 280px;
+  }
+  
+  .title {
+    color: #111827;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+  
+  .desc {
+    margin-top: 0.5rem;
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .action {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #8f5be4;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+
+  .action:hover{
+    background-color: #fff;
+    border: solid 1px #8f5be4;
+    color: #8f5be4;
+  }
+  
+  .action span {
+    transition: .3s ease;
+  }
+  
+  .action:hover span {
+    transform: translateX(4px);
+  }
+
+
+  /* From Uiverse.io by adamgiebl */ 
+button {
+    background: #fff;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+    background-color: #8f5be4;
+    transition: .1s;
+  }
+  
+  button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+  }
+  
+  
 
 
 @media (max-width: 991px) {

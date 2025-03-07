@@ -20,3 +20,30 @@ const buttonNav = function() {
 }
   
 
+//scroll animation
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".section"); // Seleciona todas as seções
+
+  // Função para verificar a visibilidade da seção na tela
+  const checkVisibility = () => {
+    const windowHeight = window.innerHeight; // Altura da janela
+    const scrollY = window.scrollY; // Distância da rolagem da página
+
+    sections.forEach((section) => {
+      const sectionTop = section.getBoundingClientRect().top + scrollY; // Posição da seção em relação ao topo
+      const sectionHeight = section.offsetHeight; // Altura da seção
+
+      // Verifica se a seção entrou na área visível da tela
+      if (scrollY + windowHeight > sectionTop + sectionHeight / 3) {
+        section.classList.add("visible"); // Adiciona a classe 'visible' para iniciar a animação
+      }
+    });
+  };
+
+  // Verifica visibilidade ao rolar a página
+  window.addEventListener("scroll", checkVisibility);
+
+  // Verifica a visibilidade assim que a página for carregada
+  checkVisibility();
+});

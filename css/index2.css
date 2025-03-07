@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 0 10px;
+    height: 200vh; /* Para criar uma página com rolagem */
+  }
+  
+  .content {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .section {
+    position: relative;
+    margin: 50px 0;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(100px); /* Inicia abaixo da tela */
+    transition: opacity 1s, transform 1s ease-out; /* Animação suave */
+  }
+
+
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .section.visible {
+    opacity: 1; /* Torna visível */
+    transform: translateY(0); /* Move o conteúdo para o seu lugar original */
+  }
+  
