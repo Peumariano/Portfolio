@@ -41,26 +41,6 @@ padding-left: 3rem;
 
 }
 
-#curriculo-button{
-    background-color: #8f5be4b0;
-}
-
-
-#curriculo-button:hover{
-    background-color: #8f5be4;
-
-}
-
-#github-button:hover{
-    background-color: #000;
-    color: #fff;
-}
-
-#linkedin-button:hover{
-    background-color: #007dbb;
-}
-
-
 .changeStyle {
     background-color: #8f5be4;
     color: #fff;
@@ -120,6 +100,7 @@ div > #logo:hover{
   padding: 0;
   text-align: center;
   width: 95vw;
+
 }
 
 .projects{
@@ -284,8 +265,7 @@ button {
   text-align: start;
   font-size: 5.8rem;
   font-family: "Poppins", sans-serif;
-  font-weight: 800;
+  font-weight: 950;
   font-style: normal;
   color: #111827;
-  
 }
