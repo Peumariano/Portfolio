@@ -7,10 +7,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
   
   body {
-    background-color: #f0f0f0;
     color: #333;
     padding: 0 10px;
     height: 200vh; /* Para criar uma página com rolagem */
