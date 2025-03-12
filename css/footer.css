@@ -88,3 +88,7 @@ footer > div >  h1{
    0 0 0 -3px  var(--background), 0 0 0 0  var(--red);
    transition: box-shadow 1s, top 5s, left 1s;
   }
+
+  #copyright-text{
+   color: #00000096;
+  }
