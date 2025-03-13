@@ -131,7 +131,7 @@ div > #logo:hover{
   background-color: #fff;
   text-align: center;
   margin-top: 10px;
-
+  border-radius: 4px;
   border: transparent;
    border: 1px solid var(--violet);
    box-shadow: 10px -10px 0 -3px var(--violet), 10px -10px var(--green),

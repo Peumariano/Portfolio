@@ -47,3 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // Verifica a visibilidade assim que a página for carregada
   checkVisibility();
 });
+
+
+const darkModeToggle = document.getElementById('darkModeToggle');
+const body = document.getElementById('body');
+
+darkModeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+});

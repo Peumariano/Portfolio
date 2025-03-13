@@ -16,7 +16,6 @@ footer > div >  h1{
    font-size: 3rem;
 }
 
-
 #linkedin-footer{
    font-size: 4rem;
    margin: 5px;
@@ -42,7 +41,24 @@ footer > div >  h1{
    text-align: center;
    padding: auto;
    text-decoration: none;
-   color:#8f5be4;
+   color: #000;
+   width: 100%;
+   height: 100%;
+}
+
+#whatsapp-footer{
+   font-size: 4.5rem;
+   text-align: center;
+   padding: auto;
+   text-decoration: none;
+   color: #25d366;
+   width: 100%;
+   height: 100%;
+}
+
+#whatsapp-footer:hover{
+   color: #25d365d2;
+   transition: .5s ease;
 }
 
 #email-text{
@@ -68,7 +84,6 @@ footer > div >  h1{
    gap: 1em;
    background: var(--background);
    padding: 1rem;
-   border: transparent;
    border: 1px solid var(--violet);
    box-shadow: 10px -10px 0 -3px var(--violet), 10px -10px var(--green),
    20px -20px 0 -3px var(--background), 20px -20px var(--yellow), 

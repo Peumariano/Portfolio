@@ -1,0 +1,161 @@
+body {
+    transition: background-color 0.6s ease, color 0.6s ease !important;
+}
+
+#darkModeToggle{
+
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    all: unset;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #131313 !important;
+    color: #eeeeeea3;
+}
+
+.dark-mode .content,
+.dark-mode nav,
+.dark-mode header,
+.dark-mode footer {
+    background-color: #131313 !important;
+}
+
+.dark-mode a {
+    color: #bbb !important;
+}
+.dark-mode .desc-titulo{
+    color: #8f5be4;
+}
+
+.dark-mode .block{
+    color: #eee;
+}
+.dark-mode .block > #titulo{
+    color: #eee;
+}
+.dark-mode ul >#pdf-button >a{
+    background-color: #8f5be4;
+    border: 3px solid #333;
+}
+
+.dark-mode ul >#github-button >a{
+    background-color: #8f5be4;
+    border: 3px solid #333;
+
+}
+
+.dark-mode ul >#linkedin-button >a{
+    background-color: #8f5be4;
+    border: 3px solid #333;
+}
+
+.dark-mode #projetos-title{
+    color: #eee;
+}
+
+.dark-mode .section >.card{
+    --background: #131313;
+    --green: violet;
+    --yellow: purple;
+    --orange: #121212;
+    --red: #b100cd;
+    --violet: #8f5be4;
+    width: 30rem;
+    height: 25rem;
+    background-color: #131313;
+    text-align: center;
+    margin-top: 10px;
+  
+    border: transparent;
+     border: 1px solid var(--violet);
+     box-shadow: 10px -10px 0 -3px var(--violet), 10px -10px var(--green),
+     20px -20px 0 -3px var(--background), 20px -20px var(--yellow), 
+     30px -30px 0 -3px var(--background), 30px -30px var(--orange), 
+     40px -40px 0 3px var(--background), 40px -40px var(--red);
+     transition: box-shadow 1s, top 5s, left 1s;
+}
+
+.dark-mode .card:hover{
+    cursor: pointer;
+   box-shadow: 0 0 0 1px var(--violet), 0 0 0 0 var(--green),
+   0 0 0 -3px var(--background), 0 0 0 0  var(--yellow),
+   0 0 0 3px var(--background), 0 0 0 0  var(--orange),
+   0 0 0 -3px  var(--background), 0 0 0 0  var(--red);
+   transition: box-shadow 1s, top 5s, left 1s;
+    border-radius: 4px;
+}
+
+
+.dark-mode .card-footer {
+    --background: #131313;
+    --green: violet;
+    --yellow: purple;
+    --orange: #121212;
+    --red: #b100cd;
+    --violet: #8f5be4;
+    width: 250px;
+    height: 254px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background: var(--background);
+    padding: 1rem;
+    border: transparent;
+    border: 1px solid var(--violet);
+    box-shadow: 10px -10px 0 -3px var(--violet), 10px -10px var(--green),
+    20px -20px 0 -3px var(--background), 20px -20px var(--yellow), 
+    30px -30px 0 -3px var(--background), 30px -30px var(--orange), 
+    40px -40px 0 3px var(--background), 40px -40px var(--red);
+    transition: box-shadow 1s, top 5s, left 1s;
+ 
+   }
+   
+   
+   /*Hover*/
+   .dark-mode .card-footer:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 1px var(--violet), 0 0 0 0 var(--green),
+    0 0 0 -3px var(--background), 0 0 0 0  var(--yellow),
+    0 0 0 -3px var(--background), 0 0 0 0  var(--orange),
+    0 0 0 -3px  var(--background), 0 0 0 0  var(--red);
+    transition: box-shadow 1s, top 5s, left 1s;
+   }
+ 
+   .dark-mode #copyright-text{
+    color: #ffffff96;
+   }
+
+
+  .dark-mode #email-footer{
+    color: #fff;
+ }
+ 
+ .dark-mode #whatsapp-footer{
+    color: #25d366 !important;
+   
+ }
+ 
+ 
+ .dark-mode #email-text{
+    color: #eee;
+ }
+
+ .dark-mode h1{
+    color: #8f5be4 !important;
+ }
+
+ .dark-mode #linkedin-footer:hover{
+    color: blue !important;
+ }
+ 
+ .dark-mode #github-footer:hover{
+    color: rgba(255, 255, 255, 0.356) !important;
+ }
+
