@@ -102,8 +102,10 @@ div > #logo:hover{
   padding: 0;
   text-align: center;
   width: 95vw;
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
 }
 
@@ -225,8 +227,7 @@ div > #logo:hover{
   }
 
 
-  /* From Uiverse.io by adamgiebl */ 
-button {
+  button {
     background: #fff;
     font-family: inherit;
     padding: 0.6em 1.3em;
@@ -257,57 +258,20 @@ button {
     display: none;
    }
 
-@media (max-width: 1146px) {
+   #titulo{
+    text-align: start;
+    font-size: 5.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 950;
+    font-style: normal;
+    color: #111827;
+  }
 
-    #wrapper > div > img{
-        display: none;
-    }
-
-    #wrapper{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-        margin-top: 100px;
-        padding:1rem;
-        overflow-x: hidden;
-    }
-
-    #titulo{
-      width: 35.3rem;
-      height: 17rem;
-    }
-
-    #titulo > strong{
-      font-size: 4.5rem;
-    }
-
- 
-
-    #section01 > div > img{
-        display: none;
-    }
-
-
-   
-    
-}
+  
 
 
 
-
-#titulo{
-  text-align: start;
-  font-size: 5.8rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 950;
-  font-style: normal;
-  color: #111827;
-}
-
-
-
-@media (max-width: 844px){
+@media (max-width: 1172px){
 
 
   #body{
@@ -326,7 +290,7 @@ button {
 
   #titulo{
     justify-content:start;
-    font-size: 6rem;
+    font-size: 4rem;
     width: 95%;
     height: 80%;
   }
@@ -336,6 +300,67 @@ button {
 
   }
 
+  #wrapper{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  #block{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  #buttons-main{
+    width: 80%;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  .button-section{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 90vh;
+  }
+
+  #titulo {
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul{
+    display: flex;
+    width: 10rem;
+    
+  
+  }
+  ul li a {
+    color: #8f5be4;
+    width: 7rem;
+    height: 7rem;
+    background-color: #fff;
+    text-align: center;
+    line-height: 7rem;
+    font-size: 4rem;
+    margin: 10px 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+  }
+
+  
   #navegacao{
     display: flex;
     box-sizing: border-box;
@@ -392,66 +417,194 @@ button {
     padding: 1rem;
     width: 100vw;
    }
+
+   #img-main >img{
+    display: none;
+   }
+   
+
+
 }
 
 
-@media (max-width: 420px){
+@media (max-width: 512px){
 
 
-  body{
-
-    overflow-x: hidden;
-
-    }
-
-    #main-title{
-      width: 90vw;
-    }
-
-    #projetos-title{
-      width: 90vw;
-    }
-
-  #section02{
+  #body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    height: 100%;
-    width: 100%;
+    box-sizing: border-box;
 
-   }
+  }
 
-   #section02 > .card{
-    width: 90vw;
-   }
-
-   #subtitulo{
-    width: 80vw;
+  #subtitulo{
     display: flex;
     justify-content: start;
     text-align: start;
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   #titulo{
+    justify-content:start;
+    font-size: 4rem;
+    width: 95%;
+    height: 80%;
+  }
+
+  #titulo > strong{
+    font-size: 3rem;
+
+  }
+
+  #wrapper{
     display: flex;
     flex-direction: column;
-    justify-content:start;
-    align-items: center;
-    font-size: 3rem;
-    width: 85%;
-    height: 50%;
-    
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  #block{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
   }
 
-  #navegacao{
-    width: 100vw;
-    margin: 0;
-    
+  #buttons-main{
+    width: 80%;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0;
   }
+
+  .button-section{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 90vh;
+  }
+
+  #titulo {
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul{
+    display: flex;
+    width: 10rem;
+    
+  
+  }
+  ul li a {
+    color: #8f5be4;
+    width: 7rem;
+    height: 5rem;
+    background-color: #fff;
+    text-align: center;
+    line-height: 4.7rem;
+    font-size: 3.5rem;
+    margin: 10px 10px;
+    display: block;
+    border-radius: 10%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+  }
+
+  ul >#pdf-button>a{
+    background-color: red;
+    color: #fff;
+  }
+
+  ul >#github-button>a{
+    background-color: black;
+    color: #fff;
+
+  }ul >#linkedin-button>a{
+    background-color: blue;
+    color: #fff;
+  }
+
 
   
+  #navegacao{
+    display: flex;
+    box-sizing: border-box;
+    
+    width: 90vw;
+  }
+
+  #section03{
+    width: 100vw;
+    gap: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+   }
+
+   div .card-footer{
+    display: none;
+   }
+
+   #whatsapp-icon{
+    display: inline-block;
+    color: #25D366;
+    font-size: 4rem;
+    margin: 5px;
+   }
+
+   #mail-icon{
+    display: inline-block;
+    color: rgba(45, 199, 255, 0.733);
+    font-size: 4rem;
+    margin: 5px;
+   }
+
+   #section02{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 25%;
+    width: 100vw;
+   }
+
+   #projetos-title{
+    margin-top: 13rem;
+   }
+
+   #titulo-footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 2rem;
+    padding: 1rem;
+    width: 100vw;
+   }
+
+
+}
+
+@media (max-width: 420px){
+
+  #titulo {
+    padding:1rem;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #subtitulo{
+    padding: 1rem;
+  }
 
 }
