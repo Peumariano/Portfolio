@@ -101,7 +101,7 @@ div > #logo:hover{
 .button-section{
   padding: 0;
   text-align: center;
-  width: 95vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -273,17 +273,9 @@ div > #logo:hover{
 
 @media (max-width: 1172px){
 
-
-  #body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-
-  }
-
   #subtitulo{
     display: flex;
+    box-sizing: border-box;
     justify-content: start;
     font-size: 2.2rem;
   }
@@ -291,30 +283,20 @@ div > #logo:hover{
   #titulo{
     justify-content:start;
     font-size: 4rem;
-    width: 95%;
-    height: 80%;
-  }
-
-  #titulo > strong{
-    font-size: 3rem;
-
+    height: 60%;
   }
 
   #wrapper{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    height: 100vh;
-  }
-  #block{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
   }
 
+ 
   #buttons-main{
-    width: 80%;
+    width: 100%;
     height: 12rem;
     display: flex;
     align-items: center;
@@ -322,27 +304,21 @@ div > #logo:hover{
     padding: 0;
   }
 
-  .button-section{
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    width: 100vw;
-    height: 90vh;
-  }
+  
 
   #titulo {
-    width: 80vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
   }
 
   ul{
     display: flex;
-    width: 10rem;
     
-  
   }
+
+
   ul li a {
     color: #8f5be4;
     width: 7rem;
@@ -361,15 +337,10 @@ div > #logo:hover{
   }
 
   
-  #navegacao{
-    display: flex;
-    box-sizing: border-box;
-    
-    width: 90vw;
-  }
+
 
   #section03{
-    width: 100vw;
+    width: 100%;
     gap: 0rem;
     display: flex;
     justify-content: center;
@@ -401,7 +372,7 @@ div > #logo:hover{
     flex-direction: column;
     gap: 2rem;
     height: 25%;
-    width: 100vw;
+    width: 100%;
    }
 
    #projetos-title{
@@ -413,9 +384,8 @@ div > #logo:hover{
     text-align: center;
     justify-content: center;
     box-sizing: border-box;
-    margin: 2rem;
     padding: 1rem;
-    width: 100vw;
+    width: 100%;
    }
 
    #img-main >img{
@@ -428,6 +398,132 @@ div > #logo:hover{
 
 
 @media (max-width: 512px){
+
+  #subtitulo{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: start;
+    font-size: 1.5rem;
+  }
+
+  #titulo{
+    justify-content:start;
+    font-size: 3.4rem;
+    height: 60%;
+  }
+
+  #wrapper{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+  }
+
+ 
+  #buttons-main{
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  
+
+  #titulo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul{
+    display: flex;
+    
+  }
+
+
+  ul li a {
+    color: #8f5be4;
+    width: 7rem;
+    height: 5rem;
+    background-color: #fff;
+    text-align: center;
+    line-height: 4.7rem;
+    font-size: 3.5rem;
+    margin: 10px 10px;
+    display: block;
+    border-radius: 10%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+  }
+
+  
+
+
+  #section03{
+    width: 100%;
+    gap: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+   }
+
+   div .card-footer{
+    display: none;
+   }
+
+   #whatsapp-icon{
+    display: inline-block;
+    color: #25D366;
+    font-size: 4rem;
+    margin: 5px;
+   }
+
+   #mail-icon{
+    display: inline-block;
+    color: rgba(45, 199, 255, 0.733);
+    font-size: 4rem;
+    margin: 5px;
+   }
+
+   #section02{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 25%;
+    width: 100%;
+   }
+
+   #projetos-title{
+    margin-top: 13rem;
+   }
+
+   #titulo-footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 100%;
+   }
+
+   #img-main >img{
+    display: none;
+   }
+   
+
+
+}
+
+
+/*@media (max-width: 512px){
 
 
   #body{
@@ -442,63 +538,65 @@ div > #logo:hover{
     display: flex;
     justify-content: start;
     text-align: start;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
 
   #titulo{
     justify-content:start;
-    font-size: 4rem;
-    width: 95%;
+    font-size: 3rem;
+    width: 90%;
     height: 80%;
   }
 
   #titulo > strong{
     font-size: 3rem;
-
   }
 
   #wrapper{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-color: #25D366;
+    
   }
-  #block{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    box-sizing: border-box;
+
+  .block{
+    background-color: gold;
+    width: 100%;
+    height: 95%;
   }
 
   #buttons-main{
-    width: 80%;
+    background-color: red;
+    width: 100%;
     height: 12rem;
     display: flex;
     align-items: center;
     box-sizing: border-box;
     padding: 0;
+
   }
 
   .button-section{
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    width: 100vw;
-    height: 90vh;
+    width: 100%;
+    height: 90%;
   }
 
   #titulo {
-    width: 80vw;
-    height: 100vh;
+    width: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
   }
 
   ul{
+    box-sizing: border-box;
     display: flex;
-    width: 10rem;
-    
-  
   }
   ul li a {
     color: #8f5be4;
@@ -537,11 +635,11 @@ div > #logo:hover{
     display: flex;
     box-sizing: border-box;
     
-    width: 90vw;
+    width: 90%;
   }
 
   #section03{
-    width: 100vw;
+    width: 100%;
     gap: 0rem;
     display: flex;
     justify-content: center;
@@ -573,7 +671,7 @@ div > #logo:hover{
     flex-direction: column;
     gap: 2rem;
     height: 25%;
-    width: 100vw;
+    width: 100%;
    }
 
    #projetos-title{
@@ -585,26 +683,41 @@ div > #logo:hover{
     text-align: center;
     justify-content: center;
     box-sizing: border-box;
-    margin: 2rem;
     padding: 1rem;
-    width: 100vw;
+    margin: 0;
+    width: 100%;
    }
 
 
 }
+*/
 
-@media (max-width: 420px){
+
+@media (max-width: 410px){
 
   #titulo {
-    padding:1rem;
-    width: 100vw;
+    padding-left:2rem;
+    width: 100%;
     height: 80vh;
     display: flex;
     flex-direction: column;
+    font-size: 3.8rem;
   }
 
   #subtitulo{
-    padding: 1rem;
+    padding-left: 2rem;
+  }
+ 
+  #buttons-main{
+    width: 20vw;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0;
   }
 
+  
+  
+  
 }
