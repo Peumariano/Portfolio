@@ -10,15 +10,15 @@ ul {
   
   ul li a {
     color: #8f5be4;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 90px;
     background-color: #fff;
     text-align: center;
-    line-height: 100px;
+    line-height: 90px;
     font-size: 65px;
     margin: 0 10px;
     display: block;
-    border-radius: 50%;
+    border-radius: 10px;
     position: relative;
     overflow: hidden;
     border: 3px solid #fff;
@@ -26,10 +26,17 @@ ul {
   }
 
   
+  ul >#pdf-button >a{ 
+    text-decoration: none;
+     font-size: 0.9rem;
+     background-color: #8f5be4;
+     color: #fff;
+  }
+  
 
   ul >#pdf-button:hover >a{ 
-    background-color: red;
-    color: #fff;
+    background-color: #fff;
+    color: #8f5be4;
     transition: .3s ease-in;
      
   }
@@ -44,8 +51,6 @@ ul {
     background-color: blue;
     color: #fff;
     transition: 0.3s ease-in;
-
-
   }
 
 
