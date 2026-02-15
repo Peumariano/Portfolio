@@ -1,218 +1,196 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pedro Mariano - Portifólio</title>
-
-
-    <script src="https://kit.fontawesome.com/0b85666b9f.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="./assets/imagens/p-solid.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./css/darkmode.css">
-    <link rel="stylesheet" href="./css/icons.css">
-    <link rel="stylesheet" href="./css/animation.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/custom.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Mariano - Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./icons8-usuário-masculino-16.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;600&family=Syne:wght@400;700&display=swap" rel="stylesheet">
     
-  </head>
-
-
-  <body id="body">
-
-    <nav class="navbar navbar-expand-lg fixed-top d-flex" id="navbar">
-      <div class="container-fluid" id="navegacao">
-        <a class="navbar-brand" href="#">&lt;Pedro Mariano/&gt;</a>
-      <button class="navbar-toggler" id="button-nav" onclick="buttonNav()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <div class="p-3 m-2 navbar-nav">
-          <a class="nav-link" aria-current="page" href="#section01">Sobre mim</a>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#main" id="main-logo">&lt;pedroMariano/&gt;</a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#sobre" data-lang-pt="Sobre" data-lang-en="About">Sobre</a></li>
+                <li><a href="#projetos" data-lang-pt="Projetos" data-lang-en="Projects">Projetos</a></li>
+                <li><a href="#experiencia" data-lang-pt="Experiência" data-lang-en="Experience">Experiência</a></li>
+                <li><a href="#contato" data-lang-pt="Contato" data-lang-en="Contact">Contato</a></li>
+            </ul>
+            <div class="controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <span data-lang-pt="🌙 Escuro" data-lang-en="🌙 Dark">🌙 Escuro</span>
+                </button>
+                <button class="lang-toggle" id="langToggle">EN</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
-        <div class="p-3 m-2 navbar-nav">
-          <a class="nav-link" aria-current="page" href="#section02">Projetos</a>
-        </div>
-        <div class="p-3 m-2 navbar-nav">
-          <a class="nav-link" aria-current="page" href="#section03">Contato</a>
-        </div>
-
-        <button id="darkModeToggle">
-          <i class="fa-solid fa-moon"></i>
-        </button>
-
-      </div>
     </nav>
 
-        
-        <div class="d-flex flex-align-content-center" id="wrapper">
-
-          <div class="button-section" id="button-section">
-
-            <div class="block">
-              <div class="block-reveal desc-titulo" id="subtitulo">
-                Olá  &#128075 eu sou Pedro Mariano
-              </div>
-              <div class="block-reveal" id="titulo">
-                <p>FULLSTACK DEVELOPER.</p>
-                
-            <ul class="buttons" id="buttons-main">
-              <li id="pdf-button">
-                <a href="./assets/files/curriculo04.pdf" target="_blank" download>
-                  Baixar cúrriculo
-                  
-                </a>
-              </li>
-              <li id="github-button">
-                <a href="https://github.com/Peumariano" target="_blank">
-                  <i class='fab fa-github'></i>
-                </a>
-              </li>
-              <li id="linkedin-button">
-                <a href="https://www.linkedin.com/in/pedro-mariano-dev/" target="_blank">
-                  <i class="fab fa-linkedin-in icon"></i></a>
-              </li>
-            </ul>
-              </div>
+    <!-- Hero Section -->
+    <section class="hero" id="main">
+        <div class="hero-content">
+            <div class="hero-subtitle" data-lang-pt="Olá, eu sou" data-lang-en="Hi, I'm">Olá, eu sou</div>
+            <h1 class="hero-title" data-lang-pt="Pedro Mariano" data-lang-en="Pedro Mariano">Pedro Mariano</h1>
+            <p class="hero-description" data-lang-pt="Desenvolvedor Full Stack & Analista de Sistemas" data-lang-en="Full Stack Developer & Systems Analyst">
+                Desenvolvedor Full Stack & Analista de Sistemas
+            </p>
+            <div class="cta-buttons">
+                <a href="#projetos" class="btn btn-primary" data-lang-pt="Ver Projetos" data-lang-en="View Projects">Ver Projetos</a>
+                <a href="./Curriculo05.pdf" download="Curriculo05" class="btn btn-secondary" data-lang-pt="⬇ Baixar Currículo" data-lang-en="⬇ Download Curriculum">⬇ Baixar Currículo</a>
             </div>
-          </div>
-          </div>
+        </div>
+        <img src="./programming-animate.svg" id="main-image" alt="">
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="fade-in">
+        <h2 class="section-title" data-lang-pt="Sobre Mim" data-lang-en="About Me">Sobre Mim</h2>
+        <p class="section-subtitle" data-lang-pt="Conheça um pouco mais sobre minha trajetória" data-lang-en="Learn more about my journey">Conheça um pouco mais sobre minha trajetória</p>
         
-
-        
-
-
-        <div id="separador"></div>
-
-        <div class="d-flex flex-align-content-center section" id="section01">
-
-          <div class="container-fluid" id="main-title">
-            <h1 id="about-title">Sobre mim</h1>
-            <div id="line"></div>
-            <p>Sou um estudante de Análise e Desenvolvimento de Sistemas na universidade internacional Uninter. Como parte do meu aprendizado, tenho me aprofundado em várias linguagens e tecnologias, como Typescript, CSS, Node.js, Next.js, e React.
-  
-              Embora ainda não tenha experiência profissional na área, estou ansioso para começar a trabalhar em projetos que me permitam aplicar meus conhecimentos e continuar aprendendo.
-              
-              </p>
+        <div class="about-content">
+            <div class="about-text">
+                <p data-lang-pt="Graduado em Análise e Desenvolvimento de Sistemas, foco minha atuação no desenvolvimento de aplicações modernas e escaláveis, unindo a agilidade do ecossistema TypeScript (Node.js/Next.js) à robustez do Java. Tenho facilidade em transitar entre o desenvolvimento de interfaces responsivas e a construção de APIs eficientes." data-lang-en="With a degree in Systems Analysis and Development, I focus my work on developing modern and scalable applications, combining the agility of the TypeScript ecosystem (Node.js/Next.js) with the robustness of Java. I am comfortable navigating between developing responsive interfaces and building efficient APIs.">
+                    Graduado em Análise e Desenvolvimento de Sistemas, foco minha atuação no desenvolvimento de aplicações modernas e escaláveis, unindo a agilidade do ecossistema TypeScript (Node.js/Next.js) à robustez do Java. Tenho facilidade em transitar entre o desenvolvimento de interfaces responsivas e a construção de APIs eficientes.
+                </p>
+                <p data-lang-pt="Possuo experiência prática na modelagem de dados com MongoDB, aplicando boas práticas de desenvolvimento para garantir código limpo e manutenível. Busco constantemente evoluir em arquitetura de software e design de sistemas, com foco em entregar soluções que gerem valor real ao produto e uma excelente experiência ao usuário." data-lang-en= "I have practical experience in data modeling with MongoDB, applying best development practices to ensure clean and maintainable code. I constantly seek to evolve in software architecture and systems design, focusing on delivering solutions that generate real value for the product and an excellent user experience.">
+                    Possuo experiência prática na modelagem de dados com MongoDB, aplicando boas práticas de desenvolvimento para garantir código limpo e manutenível. Busco constantemente evoluir em arquitetura de software e design de sistemas, com foco em entregar soluções que gerem valor real ao produto e uma excelente experiência ao usuário.
+                </p>
             </div>
+            <div>
+                <h3 data-lang-pt="Habilidades Técnicas" data-lang-en="Technical Skills"; >Habilidades Técnicas</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">TypeScript</div>
+                    <div class="skill-tag">React</div>
+                    <div class="skill-tag">Node.js</div>
+                    <div class="skill-tag">Java</div>
+                    <div class="skill-tag">MySQL</div>
+                    <div class="skill-tag">MongoDB</div>
+                    <div class="skill-tag">Git</div>
+                    <div class="skill-tag">REST APIs</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projetos" class="fade-in">
+        <h2 class="section-title" data-lang-pt="Trabalhos" data-lang-en="Works">Trabalhos</h2>
+        <p class="section-subtitle" data-lang-pt="Alguns dos meus trabalhos mais recentes" data-lang-en="Some of my most recent work">Alguns dos meus trabalhos mais recentes</p>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./print-ecommerce.png" alt="">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title" data-lang-pt="Pedaço do Céu" data-lang-en="Pedaço do Céu">Pedaço do Céu</h3>
+                    <p class="project-description" data-lang-pt="E-commerce com integração de APIs, Arquitetura Serverless e integração de pagamentos." data-lang-en="E-commerce system with API integration, serverless architecture, and payment integration.">
+                        E-commerce com integração de APIs, Arquitetura Serverless e integração de pagamentos.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Mercado Pago SDK </span>
+                        <span class="tag">Vercel Serverless Functions</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://pedaco-do-ceu-app.vercel.app/" target="_blank" rel="noopener" class="project-link" data-lang-pt="Ver trabalho →" data-lang-en="View work →">Ver trabalho →</a>
+                        <a href="https://github.com/Peumariano/pedaco-do-ceu" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./insighsaas.png" alt="">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title" data-lang-pt="Insight Lab" data-lang-en="Insight Lab">Insight Lab</h3>
+                    <p class="project-description" data-lang-pt="Sistema de Análise de Dados Educacionais com integração da API da Open AI ChatGPT." data-lang-en="Educational Data Analysis System with OpenAI ChatGPT API integration.">
+                        Sistema de Análise de Dados Educacionais com integração da API da Open AI ChatGPT.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">API Open AI</span>
+                        <span class="tag">NodeJS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://insight-lab-saas.vercel.app/" target="_blank" rel="noopener"  class="project-link" data-lang-pt="Ver trabalho →" data-lang-en="View work →">Ver trabalho →</a>
+                        <a href="https://github.com/Peumariano/insight-lab-saas" class="project-link" target="_blank" rel="noopener" >GitHub →</a>
+                    </div>
+                </div>
+            </div>
+
             
-            <div id="img-main">
-              <img src="./assets/imagens/code-typing-animate.svg" class="img-fluid" alt="" width="550px" height="550px" max-width="100%">
-
-            </div>
-
-            <div id="separador2"></div>
         </div>
+    </section>
 
-        <h1 id="projetos-title">Projetos</h1>
-
-        <div class="projects section" id="section02">
-          
-
-         <a href="https://peumariano.github.io/InsightLab/" target="_blank">
-          <div class="card">
-            <div class="image">
-              <img src="./assets/imagens/mainScreenshot.png" width="100%" height="100%" alt="">
-            </div>
-             <div class="content">
-               <a href="https://peumariano.github.io/InsightLab/" target="_blank">
-                 <span class="title">
-                  Insight lab.
-                 </span>
-               </a>
-           
-               <p class="desc">
-                Sistema de Análise de Dados Educacionais com<br>
-                 integração da API da Open AI ChatGPT.
-               </p>
-
-              
-              <a href="https://github.com/Peumariano/InsightLab" target="_blank"><button id="github-button">Código-fonte</button></a>
-
-
-             </div>
-           </div>
-         </a>
-
-         <a href="https://peumariano.github.io/landingpage/" target="_blank">
-          <div class="card">
-            <div class="image">
-              <img src="./assets/imagens/landing-page.png" width="100%" height="100%" alt="">
-            </div>
-             <div class="content">
-               <a href="https://peumariano.github.io/landingpage/" target="_blank">
-                 <span class="title">
-                   Landing Page com HTML E CSS.
-                 </span>
-               </a>
-           
-               <p class="desc">
-                 Landing page para fins de estudo com HTML E CSS. 
-               </p>
-           
-               <a href="https://github.com/Peumariano/landingpage" target="_blank"><button id="github-button">Código-fonte</button></a>
-
-             </div>
-           </div>
-         </a> 
-
-        </div>
-
+    <!-- Experience Section -->
+    <section id="experiencia" class="fade-in">
+        <h2 class="section-title" data-lang-pt="Experiência" data-lang-en="Experience">Experiência</h2>
+        <p class="section-subtitle" data-lang-pt="Minha jornada profissional" data-lang-en="My professional journey">Minha jornada profissional</p>
         
-        <!---Footer-->  
-
-
-        <footer id="section03">
-         
-          <div>
-            <h1 id="titulo-footer">Contacte-me</h1>
-            <p>Obrigado por visitar meu portfólio!</p>
-            <p id="copyright-text">©Pedro Mariano, 2025. Todos os direitos reservados.</p>
-
-              <a href="https://www.linkedin.com/in/pedro-mariano-dev/" target="_blank" id="linkedin-footer">
-                <i class="fab fa-linkedin-in icon"></i></a>
-
-              <a href="https://github.com/Peumariano" target="_blank" id="github-footer">
-                <i class='fab fa-github'></i></a>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <div class="experience-date">2025 - <span data-lang-pt="Presente" data-lang-en="Present">Presente</span></div>
+                <h3 class="experience-title" data-lang-pt="Desenvolvedor Full Stack" data-lang-en="Full Stack Developer">Desenvolvedor Full Stack</h3>
+                <div class="experience-company">Freelance</div>
+                <p class="experience-description" data-lang-pt="Atuação autônoma focada no desenvolvimento de sites e aplicativos personalizados para diversos clientes. Responsável pelo ciclo completo de atendimento, desde o levantamento de requisitos e negociação até a entrega final e suporte/manunteção." data-lang-en="Freelance work focused on developing customized websites and applications for various clients. Responsible for the complete service cycle, from requirements gathering and negotiation to final delivery and support/maintenance.">
+                    Atuação autônoma focada no desenvolvimento de sites e aplicativos personalizados para diversos clientes. Responsável pelo ciclo completo de atendimento, desde o levantamento de requisitos e negociação até a entrega final e suporte/manunteção.
+                </p>
+                <p class="experience-description">&nbsp&nbsp&nbsp&nbsp.Desenvolvimento de uma plataforma de vendas completa utilizando <strong>HTML, CSS e JavaScript</strong>.</p>
+                <p class="experience-description">&nbsp&nbsp&nbsp&nbsp.Implementação de fluxo de checkout seguro através da <strong>API do Mercado Pago</strong>.</p>
+                <p class="experience-description">&nbsp&nbsp&nbsp&nbsp.Gerenciamento de versão com <strong>Git/GitHub</strong> e hospedagem contínua via <strong>Vercel</strong>.</p>
+                <p class="experience-description">&nbsp&nbsp&nbsp&nbsp.Criação de um sistema de automação pós-venda:</p>
+                <p class="experience-description">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.<strong>Confirmação de entrega via E-mailJS</strong>: Disparo automático de status do pedido.</p>
+                <p class="experience-description">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>.Notificação via WhatsApp</strong> Integração para envio de mensagens automáticas de confirmação.</p>
                 
-                <a href="https://wa.me/5511949863277" target="_blank" id="whatsapp-icon">
-                  <i class='fab fa-whatsapp'></i></a>
-                  
-
-              <a href="mailto:pedromariano747@gmail.com" target="_blank" id="mail-icon">
-                <i class="fa-solid fa-envelope"></i>
-
-          </div>
-
-          <div>
-            <div class="card-footer">
-              <a href="mailto:pedromariano747@gmail.com" id="email-footer">
-                <i class="fa-solid fa-envelope"></i>
-                <p id="email-text">pedromariano747@gmail.com</p>
-              </a>
 
             </div>
-          </div>  
 
-          <div>
-            <div class="card-footer">
-              <a href="https://wa.me/5511949863277" id="whatsapp-footer" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
-                <p id="email-text">(11949863277)</p>
-              </a>
-
+            <div class="experience-item">
+                <div class="experience-date">2025 - <span data-lang-pt="Presente" data-lang-en="Present">Presente</span></div>
+                <h3 class="experience-title" data-lang-pt="Auxiliar de Produção" data-lang-en="Production assistant">Auxiliar de produção</h3>
+                <div class="experience-company">Cobritex</div>
             </div>
-          </div>  
-          
-          
 
-        </footer>
+        </div>
+    </section>
 
-  </body>
+    <!-- Footer / Contact -->
+    <footer id="contato">
+        <div class="footer-content">
+            <h2 class="footer-title" data-lang-pt="Vamos trabalhar juntos?" data-lang-en="Let's work together?">Vamos trabalhar juntos?</h2>
+            <p class="footer-text" data-lang-pt="Obrigado pela visita! Estou sempre aberto a novos projetos e oportunidades." data-lang-en="Thanks for visiting! I'm always open to new projects and opportunities.">
+                Obrigado pela visita! Estou sempre aberto a novos projetos e oportunidades.
+            </p>
+            
+            <div class="social-links">
+                <a href="https://github.com/Peumariano" rel="noopener noreferrer" class="social-link" target="_blank" title="GitHub">GH</a>
+                <a href="www.linkedin.com/in/pedro-mariano-dev" rel="noopener noreferrer" class="social-link" target="_blank" title="LinkedIn">IN</a>
+                <a href="mailto:pedromariano747@gmail.com" rel="noopener noreferrer" class="social-link" title="Email">✉</a>
+                <a href="https://wa.me/5511949863277" rel="noopener noreferrer" class="social-link" target="_blank" title="WhatsApp">WA</a>
+            </div>
 
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span data-lang-pt="Pedro Mariano. Todos os direitos reservados." data-lang-en="Pedro Mariano. All rights reserved.">Pedro Mariano. Todos os direitos reservados.</span></p>
+            </div>
+        </div>
+    </footer>
 
-  <script src="./script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    
+</body>
 </html>
