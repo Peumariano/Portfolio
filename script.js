@@ -17,9 +17,9 @@ themeToggle.addEventListener('click', () => {
 function updateThemeButton(theme) {
     const currentLang = localStorage.getItem('lang') || 'pt';
     if (theme === 'dark') {
-        themeToggle.innerHTML = currentLang === 'pt' ? '☀️ Claro' : '☀️ Light';
+        themeToggle.innerHTML = currentLang === 'pt' ? 'Claro' : 'Light Mode';
     } else {
-        themeToggle.innerHTML = currentLang === 'pt' ? '🌙 Escuro' : '🌙 Dark';
+        themeToggle.innerHTML = currentLang === 'pt' ? 'Escuro' : 'Dark Mode';
     }
 }
 

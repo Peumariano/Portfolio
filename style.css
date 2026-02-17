@@ -228,7 +228,7 @@ nav {
   overflow: hidden; 
   border-right: .15em solid #13addd; 
   white-space: nowrap; 
-  letter-spacing: .15em; 
+  letter-spacing: .1em; 
   animation: 
     typing 2.5s steps(40, end),
     blink-caret .75s step-end infinite;
