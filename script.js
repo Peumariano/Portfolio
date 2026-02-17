@@ -1,9 +1,7 @@
 
-// Theme Toggle
 const themeToggle = document.getElementById('themeToggle');
 const html = document.documentElement;
 
-// Load saved theme
 const savedTheme = localStorage.getItem('theme') || 'dark';
 html.setAttribute('data-theme', savedTheme);
 updateThemeButton(savedTheme);
@@ -25,7 +23,6 @@ function updateThemeButton(theme) {
     }
 }
 
-// Language Toggle
 const langToggle = document.getElementById('langToggle');
 let currentLang = localStorage.getItem('lang') || 'pt';
 
@@ -52,7 +49,6 @@ function updateLanguage(lang) {
     langToggle.textContent = lang === 'pt' ? 'EN' : 'PT';
 }
 
-// Hamburger Menu
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 
@@ -60,14 +56,12 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-// Close menu when clicking a link
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
     });
 });
 
-// Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -81,7 +75,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Scroll Animations
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
@@ -99,7 +92,6 @@ document.querySelectorAll('.fade-in').forEach(el => {
     observer.observe(el);
 });
 
-// Add active state to nav links on scroll
 window.addEventListener('scroll', () => {
     let current = '';
     const sections = document.querySelectorAll('section[id]');
