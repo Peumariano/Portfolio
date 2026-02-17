@@ -387,12 +387,7 @@ section {
     border: 1px solid var(--border);
     transition: all 0.3s;
     cursor: default;
-}
-
-.skill-tag:hover {
-    border-color: var(--accent-1);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px var(--shadow);
+    color: var(--text-primary);
 }
 
 .projects-grid {
