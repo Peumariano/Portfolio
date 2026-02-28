@@ -440,7 +440,7 @@ section {
 .project-image {
     border-radius: 16px;
     width: 100%;        /* era 760px fixo — principal causa do problema */
-    height: 340px;
+    height: 290px;
     background: var(--accent-gradient);
     display: flex;
     align-items: center;
